@@ -1,0 +1,175 @@
+/* Aplica estilos generales al cuerpo de la página */
+body {
+    font-family: Copperplate; /* Establece la fuente del texto a Copperplate */
+    line-height: 1.5; /* Define la altura de la línea para un mejor espaciado entre líneas */
+    font-size: 120%; /* Aumenta el tamaño del texto en un 20% respecto al tamaño base */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el relleno (padding) predeterminado del body */
+    background-image: url('images/fondospace.jpg'); /* Establece una imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* Mantiene el fondo fijo mientras se desplaza la página */
+    background-position: center; /* Centra la imagen de fondo en la pantalla */
+}
+
+nav ul li a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    padding: 10px 20px; /* Espacio interior del botón */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Transición suave para cambios de color */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Fondo del botón al pasar el mouse */
+    border-radius: 40px; /* Bordes curvos al pasar el mouse */
+    color: #fff; /* Color del texto al pasar el mouse */
+    cursor: pointer;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #000000; /* Establece un fondo negro para el encabezado */
+    color: #fff; /* Establece el color del texto en blanco */
+    padding: 10px 0; /* Agrega espacio (padding) arriba y abajo del contenido */
+    text-align: center; /* Centra el contenido del encabezado */
+}
+
+/* Aplica estilos a las secciones principales de la página */
+#intro, #teorias, #galeria, #tabla, #estrellas, #contacto, #video {
+    background-color: rgba(0, 0, 0, 0.57); /* Fondo negro con 57% de opacidad */
+    padding: 20px; /* Agrega espacio interior (padding) alrededor del contenido */
+    border-radius: 5px; /* Bordes redondeados para las secciones */
+    margin: 20px; /* Agrega espacio exterior (margin) entre las secciones */
+    color: #ffffff; /* Color del texto en blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave a las secciones para darles profundidad */
+}
+
+/* Estilos para la disposición de elementos dentro de la clase 'doble' */
+.doble {
+    display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas si es necesario */
+    padding: 10px; /* Espacio interior alrededor del contenedor */
+    justify-content: space-between; /* Distribuye los elementos hijos uniformemente con espacio entre ellos */
+}
+
+/* Define el ancho del formulario de contacto */
+#contacto  {
+    width: 40%; /* Establece que el formulario ocupe el 40% del ancho del contenedor padre */
+}
+
+/* Permite que el video crezca y ocupe el espacio restante disponible */
+#video {
+    flex-grow: 1; /* Permite que el contenedor del video crezca según sea necesario */
+}
+
+/* Estilos para el iframe que contiene el video */
+iframe {
+    border: 1px solid #ccc; /* Establece un borde gris claro alrededor del iframe */
+    width: 100%; /* Hace que el iframe ocupe el 100% del ancho del contenedor padre */
+    height: 560px; /* Fija la altura del iframe */
+}
+
+/* Elimina el estilo de lista por defecto y el espaciado interior para la navegación */
+nav ul {
+    list-style: none; /* Elimina los marcadores de lista predeterminados */
+    padding: 0; /* Elimina el relleno interior de la lista */
+}
+
+/* Estilos para los elementos de la lista dentro de la navegación */
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 15px; /* Agrega un margen horizontal entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces dentro de la navegación */
+nav ul li a {
+    color: #fff; /* Establece el color del texto en blanco */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+}
+
+/* Estilos para los encabezados principales (h1, h2) */
+h1, h2 {
+    color: #ffffff; /* Establece el color del texto en blanco */
+}
+
+/* Estilos para la tabla dentro de la sección 'tabla' */
+#tabla table {
+    width: 77%; /* Establece que la tabla ocupe el 77% del ancho del contenedor padre */
+    border-collapse: collapse; /* Elimina el espacio entre las celdas de la tabla */
+    margin-top: 10px; /* Agrega un margen superior a la tabla */
+}
+
+/* Estilos para las celdas y encabezados de la tabla */
+#tabla th, #tabla td {
+    border: 1px solid #ddd; /* Establece un borde gris claro alrededor de cada celda */
+    padding: 8px; /* Agrega espacio interior a cada celda */
+    text-align: left; /* Alinea el texto a la izquierda dentro de las celdas */
+}
+
+/* Estilos para los encabezados de la tabla */
+#tabla th {
+    background-color: #0000009d; /* Establece un fondo negro translúcido para los encabezados */
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex; /* Muestra los elementos del formulario en una columna vertical */
+    flex-direction: column; /* Asegura que los elementos estén en una sola columna */
+}
+
+/* Estilos para los campos de entrada, textarea, y botón dentro del formulario */
+form input, form textarea, form button {
+    margin: 10px 0; /* Agrega un margen vertical entre los elementos del formulario */
+    padding: 10px; /* Agrega espacio interior a los elementos del formulario */
+}
+
+/* Estilos para los campos de entrada y textarea cuando están en foco */
+form input:focus, form textarea:focus {
+    border: 5px solid #09297bea; /* Cambia el borde cuando los elementos están en foco */
+}
+
+/* Estilos para el botón cuando se pasa el cursor sobre él */
+button:hover {
+    background-color: #555; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano indicando que es clicable */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Centra el texto del pie de página */
+    padding: 20px; /* Agrega espacio interior al pie de página */
+    background-color: #000000; /* Establece un fondo negro */
+    color: #fff; /* Establece el color del texto en blanco */
+    margin-top: 20px; /* Agrega un margen superior para separar el pie de página del contenido anterior */
+}
+
+/* Estilos para la galería de imágenes */
+.galeria-imagenes {
+    display: flex; /* Muestra las imágenes en una fila horizontal */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si es necesario */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Agrega espacio entre las imágenes */
+    margin-top: 10px; /* Agrega espacio superior entre el título y las imágenes */
+}
+
+
+/* Estilos para las imágenes dentro de la galería */
+img {
+    width: 300px; /* Establece el ancho de las imágenes */
+    height: 300px; /* Establece la altura de las imágenes */
+}
+
+/* Estilos para las figuras dentro de la galería */
+figure {
+    margin: 0; /* Elimina el margen predeterminado */
+    text-align: center; /* Centra el texto debajo de las imágenes */
+}
+
+#musica button:hover{
+    cursor: pointer;
+    background-color: #555; /* Cambia el color de fondo del botón */
+    color: #00000081; /* Cambia el color del texto del botón */
+    border-radius: 40px; /* Bordes curvos al pasar el mouse */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Transición suave para cambios de color */    
+}

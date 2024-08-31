@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- el lenguaje predeterminado es español -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Optimiza la visualización en dispositivos móviles.-->
+    <meta name="description" content="Explorando el Cosmos y Más Allá: Una página sobre astronomía, agujeros negros, y viajes en el tiempo.">
+    <meta name="keywords" content="astronomía, agujeros negros, viajes en el tiempo, espacio, universo">
+    <title>Explorando el Cosmos y Más Allá</title>  <!-- Define el titulo de la pagina -->
+    <link rel="icon" href="css/images/icon.png" type="image/png"> <!-- sirve para poner un icono en la pestaña de la pagina -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- conecta el archivo con el archivo css para agregarle elementos esteticos a la pagina -->
+</head>
+<body>
+
+<header> <!-- encabezado de la pagina -->
+    <h1>Explorando el Cosmos y Más Allá</h1> <!-- titulo dentro de la pagina-->
+    <nav> <!--menu de navegación que enlaza a diferentes secciones de la página. -->
+        <ul> <!-- lista desordenada -->
+            <li><a href="#intro">Inicio</a></li> <!--elementos dentro de la lista -->
+            <li><a href="#teorias">Teorías</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="intro"> <!--toda la pagina se divide en secciones para el orden de estas y manejarlos de una mejor manera en el archivo css-->
+    <h2><i>Bienvenidos al Mundo del Cosmos</i></h2> <!-- titulo de la seccion y en negrita-->
+    <p>El espacio es un vasto océano de misterios y maravillas, un lugar donde las reglas conocidas de la física se desafían <br> <!-- parrafos con informacion y saltos en linea-->
+         y se crean teorías que nos llevan a los límites de nuestra comprensión. Desde las colosales estrellas que iluminan las <br>
+          profundidades del cosmos hasta los agujeros negros que devoran la materia y el tiempo, el universo es un escenario de fenómenos impresionantes. <br>
+          En esta página, te invitamos a explorar los secretos del espacio, sumergirte en las teorías más intrigantes sobre su origen y evolución, <br> 
+          y descubrir cómo cada rincón del cosmos cuenta una historia de creación, destrucción y renacimiento.</p>
+
+    <hr> <!-- linea horizontal que separa la sección de las siguientes.-->
+</section> <!--cierre de seccion-->
+
+<section id="teorias"> <!--el id sirve para faciliatar la navegacion interna de la pagina-->
+    <h2>Teorías del Universo</h2>
+    <p>A continuación, se presentan algunas de las teorías más fascinantes sobre el cosmos:</p>
+      <ul> 
+        <li><b>Agujeros Negros: </b> Singularidades en el espacio-tiempo con una atracción gravitacional inmensa.</li>
+        <li><b>Viajes en el Tiempo: </b> Conceptos teóricos de moverse hacia adelante o atrás en el tiempo.</li>
+        <li><b>Multiverso: </b> Teoría que sugiere la existencia de múltiples universos paralelos al nuestro.</li>
+        <li><b>Teoría del Bosque Oscuro: </b>idea que dice existen muchas civilizaciones alienígenas en todo el universo, pero que son silenciosas.</li>
+        <li><b>Teoría de Cuerdas: </b>propone que las partículas subatómicas no son puntos, sino pequeñas cuerdas vibrantes.</li>
+        <li><b>Teoría del Big Bang: </b>describe cómo el universo se expandió desde un estado inicial de alta densidad y temperatura.</li>
+      </ul> 
+    <p>Estas teorías son fascinantes y han capturado la imaginación de muchos científicos y filósofos a lo largo del tiempo.</p>
+</section>
+
+<section id="estrellas">
+    <h2>Estrellas Colosales</h2>
+    <p>Esta seccion muestra una lista de las estrellas mas grandes encontradas hasta el momento:</p>
+    <ol> <!--lista ordenada-->
+        <li><b>UY Scuti: </b>Tiene un diámetro estimado de unas 1,700 veces el del Sol.</li>
+        <li><b>Mu Cephei: </b> Tiene un diámetro estimado de unas 1,600 veces el del Sol.</li>
+        <li><b>VY Canis Majoris: </b> Tiene un diámetro estimado de aproximadamente 1,500 veces el del Sol.</li>
+        <li><b>Betelgeuse: </b> Tiene un diámetro de aproximadamente 1,000 veces el del Sol.</li>
+        <li><b>Antares: </b> Tiene un diámetro de alrededor de 800 veces el del Sol.</li>
+    </ol>
+    <p>Estas estrellas son cuerpos masivos y cada vez que se explora el espacio se encuentran estrellas aun mas masivas</p>
+</section>
+
+<section id="galeria">
+    <h2>Galería Espacial</h2>
+    <div class="galeria-imagenes"> <!--un contenedor genérico que se utiliza para agrupar otros elementos y aplicarles estilos o scripts específicos.-->
+        <figure> <!--contenedor donde van las imagenes con algun texto descriptivo-->
+            <img src="css/images/Pilares.jpg" alt="Imagen del espacio" width="300"> <!--imagen para poner en los contenedores-->
+            <figcaption>Los pilares de la creacion</figcaption> <!--texto que acompaña a la imagen-->
+        </figure>
+        <figure>
+            <img src="css/images/Tarantula.jpg" alt="Imagen del espacio" width="300">
+            <figcaption>La zona Tarantula </figcaption>
+        </figure>
+        <figure>
+            <img src="css/images/NebulosaOrion.jpg" alt="Imagen del espacio" width="300">
+            <figcaption>Nebulosa de Orion</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="css/images/Helice.jpg" alt="Imagen del espacio" width="300">
+            <figcaption>Nebulosa helice</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section id="tabla">
+    <h2>Datos Interesantes</h2>
+    <table> <!--agrega una tabla simplo-->
+        <tr> <!--fila de la tabla-->
+            <th>Fenómeno</th> <!--encabezado de la tabla-->
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td><b>Agujeros Negros</b></td> <!--celda de la tabla-->
+            <td>Son los restos fríos de antiguas estrellas, tan densas que ninguna partícula material, ni siquiera la luz, es capaz de escapar.</td>
+        </tr>
+        <tr>
+            <td><b>Supernovas</b></td>
+            <td>Es una explosión estelar que puede manifestarse de forma muy notable en el espacio. Son de las explosiones mas fuertes jamas vistas.</td>
+        </tr>
+        <tr>
+            <td><b>Nebulosas</b></td>
+            <td>Es una nube gigante de polvo y gas en el espacio. Algunas provienen del gas y el polvo expulsado por una Supernova</td>
+        </tr>
+        <tr>
+            <td><b>Rayos Gamma</b></td>
+            <td>Es una radiaccion electromagnetica y se producen por desintegración de isótopos radiactivos.</td>
+        </tr>
+        <tr>
+            <td><b>Quarks</b></td>
+            <td>Son un tipo de partícula subatómica elemental. Sus fuertes interacciones constituyen la materia de los núcleos atómicos.</td>
+        </tr>
+    </table>
+</section>
+
+<div class="doble">
+    <section id="contacto">
+        <h2>Comentarios o Preguntas</h2>
+        <form id="formularioContacto"> <!-- agrega un formulario con campos de textos-->
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section id="video">
+        <h2>Video del Universo</h2>
+        <iframe  src="https://www.youtube.com/embed/GP-EWh7Qnuo"  allowfullscreen></iframe> <!-- elemento para agregar un video de youtube-->
+    </section>
+
+</div>
+
+<section id="musica">
+    <button onclick="document.getElementById('background-audio').play()">Reproducir Música</button>
+    <audio id="background-audio" loop>
+        <source src="css/musica%20fondo/y2mate.com%20-%20Interstellar%20Main%20Theme%20%20Hans%20Zimmer.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+</section>
+
+
+<footer> <!-- pie de pagina-->
+    <p>&copy; 2024 Explorando el Cosmos y Más Allá. Todos los derechos reservados.</p>
+</footer>
+
+<script src="java/script.js"></script> <!-- elemento para enlazar archivo html con archivo js que sirve para agregar interacciones a la pagina-->
+</body>
+</html>
